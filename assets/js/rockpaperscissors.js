@@ -35,32 +35,32 @@ let play = function() {
     computer = tlacitka[Math.floor(Math.random() * 3)];
     
     
-    cokdo.innerHTML = `Počítač zahrál ${nazvyTlacitek[computer]} a vy jste zahráli ${nazvyTlacitek[player]}.`;
+    cokdo.innerHTML = `Zahráli jste <b>${nazvyTlacitek[player]}</b> a počítač zahrál <b>${nazvyTlacitek[computer]}</b>.`;
 
     if(computer == player){
-        result.innerHTML = "Remíza."
+        result.innerHTML = "<b>Remíza.</b>"
     }
     else {
         if(computer == "papir") {
             if(player == "kamen") {
-                result.innerHTML = "Prohráli jste.";
+                result.innerHTML = "<b>Prohráli jste.</b>";
             }
             else if(player == "nuzky") {
-                result.innerHTML = "Vyhráli jste, gratuluji.";
+                result.innerHTML = "<b>Vyhráli jste, gratuluji.</b>";
             }
         } else if(computer == "kamen") {
             if(player == "papir") {
-                result.innerHTML = "Vyhráli jste, gratuluji.";
+                result.innerHTML = "<b>Vyhráli jste, gratuluji.</b>";
             }
             else if(player == "nuzky") {
-                result.innerHTML = "Prohráli jste.";
+                result.innerHTML = "<b>Prohráli jste.</b>";
             }
         } else if(computer == "nuzky") {
             if(player == "kamen") {
-                result.innerHTML = "Vyhráli jste, gratuluji.";
+                result.innerHTML = "<b>Vyhráli jste, gratuluji.</b>";
             }
             else if(player == "papir") {
-                result.innerHTML = "Prohráli jste.";
+                result.innerHTML = "<b>Prohráli jste.</b>";
             }
         }
         else {
